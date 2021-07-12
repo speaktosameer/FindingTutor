@@ -1,8 +1,18 @@
 import React from 'react'
 import './Styles/style.css'
-// import './Styles/design'
 
-function Auth() {
+function SignUp() {
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
+
+sign_up_btn.addEventListener("click", () => {
+  container.classList.add("sign-up-mode");
+});
+
+sign_in_btn.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode");
+});
     return (
         <>
             <div class="container">
@@ -11,56 +21,58 @@ function Auth() {
           <form action="#" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
-              <i class="fa fa-user"></i>
+              <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
             </div>
             <div class="input-field">
-              <i class="fa fa-lock"></i>
+              <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
-                <i class="fa fa-facebook-f"></i>
+                <i class="fab fa-facebook-f"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fa fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fa fa-google"></i>
+                <i class="fab fa-google"></i>
               </a>
-              
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           </form>
           <form action="#" class="sign-up-form">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
-              <i class="fa fa-user"></i>
+              <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
             </div>
             <div class="input-field">
-              <i class="fa fa-envelope"></i>
+              <i class="fas fa-envelope"></i>
               <input type="email" placeholder="Email" />
             </div>
             <div class="input-field">
-              <i class="fa fa-lock"></i>
+              <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
-                <i class="fa fa-facebook-f"></i>
+                <i class="fab fa-facebook-f"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fa fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fa fa-google"></i>
+                <i class="fab fa-google"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fa fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
@@ -79,7 +91,7 @@ function Auth() {
               Sign up
             </button>
           </div>
-          <img src="images/logo.svg" class="image" alt="" />
+          <img src="img/log.svg" class="image" alt="" />
         </div>
         <div class="panel right-panel">
           <div class="content">
@@ -92,7 +104,7 @@ function Auth() {
               Sign in
             </button>
           </div>
-          <img src="images/register.svg" class="image" alt="" />
+          <img src="img/register.svg" class="image" alt="" />
         </div>
       </div>
     </div>
@@ -100,4 +112,4 @@ function Auth() {
     )
 }
 
-export default Auth
+export default SignUp
