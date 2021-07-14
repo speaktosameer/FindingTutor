@@ -1,4 +1,4 @@
-const mongoose =requie('mongoose')
+const mongoose =require('mongoose')
 const crypto=require('crypto')
 
 //user schema
@@ -69,4 +69,4 @@ userSchema.methods={
 }
 
 
-module.exports ==mongoose.module('User',userSchema)
+module.exports = mongoose.model('User',userSchema)
