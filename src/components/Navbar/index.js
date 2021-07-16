@@ -2,13 +2,13 @@ import React from 'react';
 import {FaBars} from 'react-icons/fa';
 import { Nav,NavbarContainer,NavLogo,MobileIcon, NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink } from './NavbarElement'
 
-const Navbar = () => {
+const Navbar = ({toogle}) => {
     return (
         <>
             <Nav>
                  <NavbarContainer>
                    <NavLogo to="/">tutor</NavLogo>
-                     <MobileIcon>
+                     <MobileIcon onClick={toogle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
