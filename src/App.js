@@ -1,10 +1,12 @@
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World I am from Tuttor Finder</h1>      
-    </div>
+    <Router>
+     <Navbar/>
+    </Router>
   );
 }
 
