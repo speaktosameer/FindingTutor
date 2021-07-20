@@ -1,12 +1,12 @@
 import React from 'react'
-import './SignupElement.css'
+import './SigninElement.css'
 import { Link } from 'react-router-dom'
 import HomeImg from '../../../assets/home.png';
 
-const SignUp = () => {
+const SignIn = () => {
     return (
         <div class="main">
-        <div class="header"><Link to="/"><img src={HomeImg} alt="Home" class="homeicons"/></Link>SIGN UP</div>
+        <div class="header"><Link to="/"><img src={HomeImg} alt="Home" class="homeicon"/></Link>LOG IN</div>
     <div class="container">
         <div class="card">
             <div class="face face1">
@@ -21,7 +21,7 @@ const SignUp = () => {
                         <h3>I am Parent</h3>
                         <p>Manage payments or lessons for your child</p>
                         <h3>
-                            <button>Parent SignUp</button>
+                            <button>Parent Log in</button>
                         </h3>
                 </div>
             </div>
@@ -39,7 +39,7 @@ const SignUp = () => {
                     <h3>I am Student</h3>
                     <p>Have lessons, message your tutor or watch your lessons back</p>
                     <h3>
-                        <button>Student SignUp</button>
+                        <button>Student Log in</button>
                     </h3>
                 </div>
             </div>
@@ -57,14 +57,14 @@ const SignUp = () => {
                     <h3>I am Teacher</h3>
                     <p>Give lessons or manage bookings with your customers</p>
                     <h3>
-                        <button>Teacher SignUp</button>
+                        <button>Teacher Log in</button>
                     </h3>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footersignup">
-    <h3>I have Already Account! <Link to="/SignInPage" class="btn">LOG IN</Link></h3>
+    <div class="footerlogin">
+    <h3>I am New Here! <Link to="/SignUpPage" class="btn">Create Account</Link></h3>
     </div>
     
 </div>
@@ -72,4 +72,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default SignIn

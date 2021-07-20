@@ -1,6 +1,8 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa';
 import { Nav,NavbarContainer,NavLogo,MobileIcon, NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink } from './NavbarElement'
+import '../Authentication/SignIn/index'
+
 
 const Navbar = ({toogle}) => {
     return (
@@ -26,8 +28,8 @@ const Navbar = ({toogle}) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/login">LogIn</NavBtnLink>
-                        <NavBtnLink to="/signup">SignUp</NavBtnLink>
+                        <NavBtnLink to="/SignInPage">LogIn</NavBtnLink>
+                        <NavBtnLink to='/SignUpPage'>SignUp</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer> 
             </Nav>
